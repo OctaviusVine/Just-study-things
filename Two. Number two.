@@ -1,0 +1,29 @@
+'''
+Wrote a program that finds asks to type a number, then finds all the following points and shows them.
+the sum of its digits;
+the number of digits in it;
+the product of its digits;
+the arithmetic mean of its digits;
+its first digit;
+the sum of its first and last digits.
+'''
+
+n = int(input())
+lastf = n % 10
+summ = 0
+amount = 0
+mult = 1
+while n != 0:
+    last_digit = n % 10
+    summ += last_digit
+    amount += 1
+    mult *= last_digit
+    n = n // 10
+    if 0 < n < 10:
+        firstf = n
+print(summ)
+print(amount)
+print(mult)
+print(summ / amount)
+print(firstf)
+print(firstf + lastf)
