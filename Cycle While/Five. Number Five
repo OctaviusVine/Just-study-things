@@ -1,5 +1,7 @@
 '''
-Smallest divisor
+New topic: "break, continue, else"
+
+Task: smallest divisor
 The input to the program is the number n > 1. I wrote a program that outputs its smallest divisor other than 1.
 ''''
 
