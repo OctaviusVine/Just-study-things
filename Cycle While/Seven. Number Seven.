@@ -1,0 +1,22 @@
+'''
+New topic: "Nested loops"
+
+Now I'll upload only difficult tasks and exersices.
+
+Task: "The star triangle" - increased complexity
+Given an odd natural number nn. I wrote a program that prints an isosceles star triangle with a base equal to n according to the example:
+
+*
+**
+***
+****
+***
+**
+*
+'''
+
+n = int(input())
+for i in range(1, n // 2 + 2):
+    print("*" * i)
+for j in range(n - (n // 2 + 1), 0, -1):
+    print("*" * j)
