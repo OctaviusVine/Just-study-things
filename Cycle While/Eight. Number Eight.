@@ -1,0 +1,19 @@
+'''
+Task: divisors-1
+The program is fed two natural numbers aa and bb (a < b) as input. 
+I wrote a program that finds a natural number from the segment [a; b] with the maximum sum of divisors.
+'''
+
+a = int(input())
+b = int(input())
+largest = 0
+summ_count = 0
+for i in range(a, b + 1):
+    summ = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            summ += j
+            if summ >= summ_count:
+                summ_count = summ
+                largest = i
+print(largest, summ_count)
