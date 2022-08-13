@@ -1,0 +1,18 @@
+'''
+New topic: strings
+String methods, part 2
+
+Task: the most frequent symbol
+A line of text is supplied to the program as input. I wrote a program that displays the symbol that appears most often.
+'''
+
+s = input()
+count_main = 0
+the_most_often_symbol = ""
+for i in range(len(s)):
+    count_add = 0
+    count_add += s.count(s[i])
+    if count_add >= count_main:
+        count_main = count_add
+        the_most_often_symbol = s[i]
+print(the_most_often_symbol)
