@@ -1,0 +1,18 @@
+'''
+Task: first and last occurrence
+
+A line of text is supplied to the program as input. If the letter "f" occurs only once in this line, its index is output. 
+If it occurs two or more times, the index of its first and last occurrence is displayed on the same line, separated by a space character. 
+If the letter "f" does not occur in this line, "NO" is output.
+'''
+
+s = input()
+count_f = s.count("f")
+if count_f == 1:
+    print(s.index("f"))
+elif count_f >= 2:
+    print(s.index("f"), s.rindex("f"))
+elif count_f == 0:
+    print("no".upper())
+else:
+    print("you broke the programm dumbass".capitalize)
