@@ -1,6 +1,6 @@
 '''
 Task: divisors-1
-The program is fed two natural numbers aa and bb (a < b) as input. 
+The program is fed two natural numbers a and b (a < b) as input. 
 I wrote a program that finds a natural number from the segment [a; b] with the maximum sum of divisors.
 '''
 
