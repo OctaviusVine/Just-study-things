@@ -1,0 +1,8 @@
+'''
+Task: deleting a fragment
+The program is fed a line of text in which the letter "h" occurs at least twice. 
+I wrote a program that removes the first and last occurrence of the letter "h" from this string, as well as all the characters between them.
+'''
+
+s = input()
+print(s[:s.find("h")], s[s.rfind("h") + 1:], sep="")
