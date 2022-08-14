@@ -1,0 +1,15 @@
+'''
+Task from exam on the topic "strings"
+Upheaval
+The input to the program is a line of text in which the letter "h" occurs at least twice.
+I wrote a program that returns the original string and reverses the sequence of characters enclosed between the first and last occurrence of the letter "h".
+'''
+
+s = input()
+print(s[0: s.find("h")], s[s.rfind("h"):s.find("h"): -1], s[s.rfind("h"):], sep="")
+
+'''
+for example: the program will process next input in the following way
+abch12345h
+abch54321h
+'''
