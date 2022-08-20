@@ -1,0 +1,20 @@
+'''
+New topic: lists and methods of work with them
+
+
+Task 1: the sum of two
+The input to the program is a natural number n > = 2, and then n integers.
+Wrote a program that creates a list of the specified numbers consisting of sums of neighboring numbers (0 and 1, 1 and 2, 2 and 3, etc.).
+'''
+
+
+n = int(input())
+mylist_1 = []
+mylist_2 = []
+for i in range(n):
+    s = int(input())
+    mylist_1.append(s)
+    for j in range(len(mylist_1) - 1):
+        mylist_2.append(mylist_1[j] + mylist_1[j + 1])
+        del mylist_1[0]
+print(mylist_2)
